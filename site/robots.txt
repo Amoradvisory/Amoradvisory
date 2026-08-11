@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amoradvisory.github.io/Amoradvisory/sitemap.xml
