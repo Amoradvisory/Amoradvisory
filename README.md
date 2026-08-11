@@ -1,5 +1,7 @@
 # Amor El Hamrouni — IA × pédagogie × agents
 
+🌐 **[Portfolio public — démonstrateurs et études de cas](https://amoradvisory.github.io/Amoradvisory/)**
+
 **Enseignant & formateur en Belgique francophone | IA appliquée à l’éducation | agents, automatisations et conception d’outils pédagogiques**
 
 Je travaille à l’intersection de trois réalités : **enseignement**, **pédagogie** et **intelligence artificielle appliquée**.

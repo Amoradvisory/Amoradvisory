@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PiloteCours — étude de cas | Amor El Hamrouni</title>
+    <meta
+      name="description"
+      content="Étude de cas PiloteCours : une application Android hors ligne qui soutient la conduite de séance sans détourner l’attention de la classe."
+    />
+    <meta name="theme-color" content="#12213b" />
+    <link rel="canonical" href="https://amoradvisory.github.io/Amoradvisory/cases/pilotecours.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark" aria-hidden="true">AEH</span>
+          <span>Amor El Hamrouni</span>
+        </a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="../index.html#preuves">Démonstrateurs</a>
+          <a href="../index.html#methode">Méthode</a>
+          <a class="nav-cta" href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu" class="container">
+      <section class="case-hero">
+        <div>
+          <p class="eyebrow">Étude de cas · application Android</p>
+          <h1>PiloteCours</h1>
+          <p class="lede">
+            Un cockpit hors ligne, pensé pour être consulté en quelques secondes et à une main lorsque
+            l’attention doit rester dans la classe.
+          </p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="https://github.com/Amoradvisory/claude-agent-workspace/tree/master/PiloteCours"
+              >Voir le code</a
+            >
+            <a
+              class="button"
+              href="https://github.com/Amoradvisory/claude-agent-workspace/blob/master/PiloteCours/CASE_STUDY.md"
+              >Cas source</a
+            >
+          </div>
+        </div>
+        <aside class="case-summary" aria-label="Résumé du projet">
+          <dl>
+            <dt>Utilisateur</dt><dd>Enseignant débutant</dd>
+            <dt>Format</dt><dd>Application Android native</dd>
+            <dt>Réseau</dt><dd>Fonctionnement hors ligne</dd>
+            <dt>Stack</dt><dd>Kotlin · Jetpack Compose</dd>
+            <dt>Maturité</dt><dd>Prototype source public</dd>
+          </dl>
+        </aside>
+      </section>
+
+      <div class="case-layout">
+        <aside class="case-toc" aria-label="Sommaire">
+          <p>Dans ce cas</p>
+          <ol>
+            <li><a href="#probleme">Problème</a></li>
+            <li><a href="#hypothese">Hypothèse</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#donnees">Données</a></li>
+            <li><a href="#limites">Limites</a></li>
+            <li><a href="#preuve">Ce que cela prouve</a></li>
+            <li><a href="#suite">Prochaine expérience</a></li>
+          </ol>
+        </aside>
+
+        <article class="case-content">
+          <section id="probleme">
+            <p class="eyebrow">01 · Problème professionnel</p>
+            <h2>La bande passante mentale manque au moment où elle compte.</h2>
+            <p class="large">
+              Entrée en classe, consignes, rythme, transitions et recadrages se superposent. Un support
+              trop dense ou dépendant du réseau ajoute de la navigation là où il faudrait seulement un
+              repère.
+            </p>
+            <blockquote>
+              L’outil utile n’essaie pas de piloter la classe. Il aide l’enseignant à retrouver le bon
+              geste sans quitter mentalement la situation.
+            </blockquote>
+          </section>
+
+          <section id="hypothese">
+            <p class="eyebrow">02 · Hypothèse</p>
+            <h2>Organiser le support selon le temps réel de la séance.</h2>
+            <p>
+              Le parcours suit les phases du cours plutôt qu’une taxonomie abstraite : avant d’entrer,
+              0–15 minutes, 15–45 minutes, 45–120 minutes, puis fin de séance. Deux accès transversaux
+              — recadrages et mode discret — restent disponibles lorsque la situation l’exige.
+            </p>
+          </section>
+
+          <section id="solution">
+            <p class="eyebrow">03 · Dispositif</p>
+            <h2>Huit écrans, des choix volontairement sobres.</h2>
+            <div class="decision-grid">
+              <div class="decision"><strong>Hors ligne</strong>Le contenu est embarqué ; aucun backend n’est nécessaire.</div>
+              <div class="decision"><strong>Portrait</strong>L’interface vise une consultation mobile brève et à une main.</div>
+              <div class="decision"><strong>Trois tailles</strong>Le texte peut être agrandi sans changer le contenu.</div>
+              <div class="decision"><strong>Continuité</strong>Dernier écran, favoris et taille sont mémorisés avec DataStore.</div>
+              <div class="decision"><strong>Accès rapide</strong>Les recadrages restent accessibles depuis la barre inférieure.</div>
+              <div class="decision"><strong>Navigation courte</strong>Les phases offrent précédent et suivant au lieu d’un labyrinthe.</div>
+            </div>
+          </section>
+
+          <section id="donnees">
+            <p class="eyebrow">04 · Données et automatisation</p>
+            <h2>La meilleure donnée sensible est parfois celle qu’on ne collecte pas.</h2>
+            <p class="safe-note">
+              Aucun nom, note, identifiant ou résultat d’élève n’est nécessaire. L’application conserve
+              seulement des préférences d’interface sur l’appareil.
+            </p>
+            <p>
+              PiloteCours n’intègre pas d’IA dans sa version actuelle. C’est un choix cohérent avec le
+              besoin : accéder vite à un contenu préparé. Une future automatisation ne serait utile que
+              si elle réduisait davantage la friction sans introduire de données personnelles.
+            </p>
+          </section>
+
+          <section id="limites">
+            <p class="eyebrow">05 · Maturité et limites</p>
+            <h2>Le dépôt prouve l’existence du produit, pas son adoption.</h2>
+            <p class="limit-note">
+              Le code, les routes, la persistance locale et la configuration Android ont été inspectés.
+              La compilation APK, les tests sur appareil, l’audit d’accessibilité et les tests avec des
+              enseignants n’ont pas été exécutés dans cette mission.
+            </p>
+            <p>
+              Il ne faut donc revendiquer ni déploiement institutionnel, ni usage par d’autres
+              enseignants, ni impact sur les apprentissages. Le niveau réel est celui d’un prototype
+              Android public et documenté.
+            </p>
+          </section>
+
+          <section id="preuve">
+            <p class="eyebrow">06 · Valeur professionnelle</p>
+            <h2>Ce projet relie besoin métier, ergonomie et sobriété technique.</h2>
+            <ul>
+              <li>traduction d’une charge cognitive en parcours temporel ;</li>
+              <li>conception mobile autour d’un usage réel et contraint ;</li>
+              <li>architecture local-first qui minimise la collecte ;</li>
+              <li>capacité à expliquer les choix sans inventer un impact ;</li>
+              <li>réalisation Android native inspectable.</li>
+            </ul>
+          </section>
+
+          <section id="suite">
+            <p class="eyebrow">07 · Prochaine expérimentation</p>
+            <h2>Rendre l’application démontrable en moins de cinq minutes.</h2>
+            <p>
+              Ajouter une CI Android reproductible, produire un APK de démonstration et enregistrer une
+              courte vidéo : reprendre une phase, ouvrir un recadrage, passer en mode discret. Puis tester
+              la lisibilité et le nombre de gestes avec trois enseignants volontaires.
+            </p>
+            <a class="back-link" href="../index.html#preuves">← Retour aux démonstrateurs</a>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Amor El Hamrouni</span>
+        <span>Prototype documenté · aucune donnée d’élève</span>
+      </div>
+    </footer>
+  </body>
+</html>
