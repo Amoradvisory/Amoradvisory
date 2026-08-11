@@ -1,33 +1,81 @@
-# Amoradvisory
+# Amor El Hamrouni — IA × pédagogie × agents
 
-**Enseignant et créateur d'outils — IA, automatisation et applications pratiques.**
+**Enseignant & formateur en Belgique francophone | IA appliquée à l’éducation | agents, automatisations et conception d’outils pédagogiques**
 
-Je construis des outils que j'utilise réellement : agents IA locaux, applications de productivité, outils pédagogiques. Approche **local-first** (les données restent chez l'utilisateur), exécution vérifiée, projets maintenus avec l'aide d'agents IA que je pilote.
+Je travaille à l’intersection de trois réalités : **enseignement**, **pédagogie** et **intelligence artificielle appliquée**.
 
----
+Depuis 2023, j’utilise et j’orchestre des outils d’IA, des agents et des automatisations pour résoudre des problèmes concrets : préparer et structurer l’enseignement, capitaliser l’expérience pédagogique, automatiser des tâches répétitives, transformer des contenus en ressources exploitables et concevoir des applications utiles au terrain.
 
-## 🚀 Projets phares
+Je ne me positionne pas comme ingénieur logiciel. Mon rôle est plutôt de **concevoir le besoin, structurer le dispositif, piloter les agents et outils techniques, tester le résultat et l’inscrire dans un usage métier réel**.
 
-| Projet | Description | Stack | Statut |
-|---|---|---|---|
-| [PromptVault](https://github.com/Amoradvisory/promptvault) | Base de prompts IA, sync multi-appareils, PWA + APK Android | Next.js 16 · Firebase · Capacitor | ✅ Fonctionnel, build vérifié |
-| [FlowPilot](https://github.com/Amoradvisory/FlowPilot) | Cockpit de productivité personnel local-first (agenda, focus, habitudes) | SvelteKit 5 · Tailwind 4 · PWA | ✅ Prototype actif |
-| [Nanobot Omega](https://github.com/Amoradvisory/nanobot-omega) | Agent IA local autonome 24/7 : Ollama + rotation Gemini + 44 outils MCP + watchdog | Python · Ollama · MCP | ⚙️ Architecture complète |
-| [Clairvid](https://github.com/Amoradvisory/clairvid) | Plateforme vidéo sans publicité intrusive, pensée pour les créateurs | Next.js 14 · TypeScript | 🧪 En conception |
-| [CallScribe](https://github.com/Amoradvisory/CallScribe) | App Android d'enregistrement d'appels ambiant (WAV local, historique) | Kotlin · Jetpack Compose | 🧪 Prototype |
+## 🎯 Cap professionnel
 
-## 🧰 Autres projets
+Je développe aujourd’hui ce portfolio comme preuve de compétences pour évoluer vers des fonctions liées à :
 
-- [hermes-mission-control](https://github.com/Amoradvisory/hermes-mission-control) — spécification d'un cockpit de pilotage pour flottes d'agents IA
-- [super-mode-vocal-protocol](https://github.com/Amoradvisory/super-mode-vocal-protocol) — protocole de lecture vocale rapide pour agents locaux
-- [claude-agent-workspace](https://github.com/Amoradvisory/claude-agent-workspace) — atelier d'agent augmenté (dont PiloteCours, app Android pédagogique)
-- [cv-enseignant](https://github.com/Amoradvisory/cv-enseignant) — CV en ligne ([voir la page](https://amoradvisory.github.io/cv-enseignant/))
-- [pink-sweater-store](https://github.com/Amoradvisory/pink-sweater-store) — prototype e-commerce React/TypeScript
+- l’IA appliquée à l’éducation ;
+- la formation et l’accompagnement des professionnels ;
+- la technopédagogie et le numérique éducatif ;
+- la conception de dispositifs et ressources pédagogiques ;
+- les projets, l’innovation et la transformation des pratiques.
 
-## 🧭 Ma démarche
+## 🧪 Démonstrateurs pédagogiques et IA
 
-- **Local-first** : les outils fonctionnent sans cloud obligatoire, les données restent à l'utilisateur.
-- **Agents IA en production réelle** : mes agents tournent 24/7 sur mes machines et maintiennent ce portfolio.
-- **Du concret** : chaque projet répond à un besoin réel que j'ai — enseignement, productivité, automatisation.
+### 📱 PiloteCours
 
-📍 Belgique · 🗣️ Français/English · Ce portfolio est entretenu en continu (humain + agents IA).
+Application Android de pilotage de séance pour enseignant : phases du cours, préparation avant l’entrée en classe, recadrages rapides, mode discret, favoris et consultation hors ligne.
+
+➡️ [`claude-agent-workspace/PiloteCours`](https://github.com/Amoradvisory/claude-agent-workspace/tree/master/PiloteCours)
+
+**Ce que ce projet démontre :** traduction d’un problème de terrain en interface utilisable, structuration d’un scénario pédagogique, conception mobile et orchestration d’agents pour produire un outil concret.
+
+### 🧭 FlowPilot
+
+PWA local-first de pilotage personnel : agenda, focus, habitudes, collections, clarification et analytics. Le projet sert de base à une adaptation vers un **cockpit enseignant** centré sur la préparation, les priorités, les séquences et le suivi du travail pédagogique.
+
+➡️ [FlowPilot](https://github.com/Amoradvisory/FlowPilot)
+
+### 🎥 TranscriptIA
+
+Application Windows qui transforme une vidéo YouTube en document Markdown horodaté, structuré et exploitable par une IA.
+
+➡️ [TranscriptIA](https://github.com/Amoradvisory/TranscriptIA)
+
+**Usage éducatif visé :** transformer rapidement une ressource vidéo en matériau consultable, analysable et réutilisable dans un dispositif pédagogique.
+
+### 🗂️ PromptVault
+
+Bibliothèque de prompts IA synchronisée, disponible en PWA et Android. Elle sert de base à une future bibliothèque de scénarios et workflows pédagogiques réutilisables.
+
+➡️ [PromptVault](https://github.com/Amoradvisory/promptvault)
+
+### 🤖 Nanobot Omega
+
+Agent local autonome multi-outils : orchestration de modèles, Google Workspace, mémoire, scraping, veille, automatisations et self-heal.
+
+➡️ [Nanobot Omega](https://github.com/Amoradvisory/nanobot-omega)
+
+**Ce que ce projet démontre :** capacité à concevoir et piloter une architecture agentique complexe sans chercher à devenir ingénieur logiciel de métier.
+
+## 🧠 Autre preuve structurante
+
+Je développe également dans Notion un **Second cerveau enseignant** : système de mémoire pédagogique reliant référentiels, cours, exercices, évaluations, ressources, observations de terrain, difficultés récurrentes et versions successives.
+
+L’objectif n’est pas de produire davantage de contenu, mais de **capitaliser l’expérience, réduire le travail répétitif et améliorer les décisions pédagogiques**.
+
+## 🧰 Principes de travail
+
+- **Terrain d’abord** : partir d’un problème réellement vécu ou observé.
+- **IA comme levier** : utiliser agents et automatisations pour augmenter la capacité d’action, pas pour remplacer le jugement professionnel.
+- **Contrôle humain** : vérifier, tester et documenter les résultats.
+- **No-code / orchestration lorsque pertinent** : privilégier la valeur métier plutôt que la sophistication technique pour elle-même.
+- **Preuves visibles** : chaque projet doit démontrer une compétence transférable vers la formation, l’accompagnement ou les projets éducatifs.
+
+## 🔗 Références
+
+- [LinkedIn](https://www.linkedin.com/in/amor-el-hamrouni/)
+- [CV enseignant](https://amoradvisory.github.io/cv-enseignant/)
+- [CV formateur](https://amoradvisory.github.io/cv-formateur/)
+
+📍 Belgique francophone · Français / English
+
+> Portfolio en évolution continue. Les applications présentées sont des projets personnels et démonstrateurs ; leur niveau de maturité est indiqué dans leurs dépôts respectifs.
