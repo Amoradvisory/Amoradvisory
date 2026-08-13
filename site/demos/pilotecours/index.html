@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PiloteCours — aide de terrain pour garder le fil d’une séance</title>
+    <meta
+      name="description"
+      content="Démonstrateur mobile-first : cinq phases, recadrages rapides et mode discret pour garder le fil d’une séance, sans compte ni donnée élève."
+    />
+    <meta name="theme-color" content="#07131f" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="PiloteCours — garder le fil d’une séance" />
+    <meta
+      property="og:description"
+      content="Un démonstrateur local, simple et discret pour retrouver le bon repère au bon moment."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_BE" />
+    <meta property="og:url" content="https://amoradvisory.github.io/Amoradvisory/demos/pilotecours/" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://amoradvisory.github.io/Amoradvisory/demos/pilotecours/" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-text-scale="normal">
+    <a class="skip-link" href="#app-main">Aller au contenu</a>
+
+    <header class="app-header">
+      <a class="brand" href="../../" aria-label="Retour au portfolio d’Amor El Hamrouni">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>
+          <strong>PiloteCours</strong>
+          <small>Aide de terrain</small>
+        </span>
+      </a>
+      <button class="icon-button" type="button" data-action="text-scale" aria-label="Agrandir le texte">
+        <span aria-hidden="true">Aa</span>
+      </button>
+    </header>
+
+    <main id="app-main" tabindex="-1">
+      <div id="app">
+        <section class="screen static-fallback" aria-labelledby="fallback-title">
+          <p class="eyebrow">Démonstrateur local</p>
+          <h1 id="fallback-title">Le bon repère, au bon moment.</h1>
+          <p>Activez JavaScript pour parcourir les cinq phases, les recadrages rapides et le mode discret.</p>
+          <ol>
+            <li>Avant d’entrer</li>
+            <li>0–15 min</li>
+            <li>15–45 min</li>
+            <li>45–120 min</li>
+            <li>Fin de séance</li>
+          </ol>
+        </section>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p><strong>Local par conception.</strong> Aucun compte, aucune donnée élève, aucun appel à une IA.</p>
+      <a href="../../cases/pilotecours.html">Lire l’étude de cas</a>
+    </footer>
+
+    <div class="reframe-overlay" data-overlay hidden>
+      <button type="button" class="overlay-close" data-action="close-reframe">Fermer</button>
+      <p data-overlay-phrase></p>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

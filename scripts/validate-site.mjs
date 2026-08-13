@@ -5,11 +5,18 @@ const root = resolve('site');
 const expected = [
   'index.html',
   'styles.css',
+  'favicon.svg',
   'robots.txt',
   'sitemap.xml',
   'cases/teacherflow.html',
   'cases/pilotecours.html',
-  'cases/second-cerveau.html'
+  'cases/second-cerveau.html',
+  'demos/pilotecours/index.html',
+  'demos/pilotecours/pilotecours.js',
+  'demos/pilotecours/app.js',
+  'demos/pilotecours/styles.css',
+  'demos/pilotecours/manifest.webmanifest',
+  'demos/pilotecours/icon.svg'
 ];
 
 for (const path of expected) {
@@ -30,10 +37,39 @@ const canonicalEmail = 'enseignant.be@gmail.com';
 const indexHtml = readFileSync(join(root, 'index.html'), 'utf8');
 const canonicalMailtoCount = [...indexHtml.matchAll(/href="mailto:enseignant\.be@gmail\.com"/gi)].length;
 
-if (canonicalMailtoCount !== 1) {
+if (canonicalMailtoCount !== 2) {
   throw new Error(
-    `index.html doit contenir exactement un lien mailto:${canonicalEmail} (trouvé : ${canonicalMailtoCount})`
+    `index.html doit contenir exactement deux liens mailto:${canonicalEmail} (trouvé : ${canonicalMailtoCount})`
   );
+}
+
+for (const required of [
+  'Je transforme des frictions pédagogiques concrètes en dispositifs simples, testables et responsables.',
+  'id="demonstrateurs"',
+  'href="demos/pilotecours/"',
+  'href="https://amoradvisory.github.io/FlowPilot/teacher/"',
+  'href="https://www.linkedin.com/in/amor-el-hamrouni/"'
+]) {
+  if (!indexHtml.includes(required)) {
+    throw new Error(`index.html ne contient pas le contrat attendu : ${required}`);
+  }
+}
+
+const piloteCoursApp = readFileSync(join(root, 'demos/pilotecours/app.js'), 'utf8');
+for (const required of [
+  'Garder le fil de la séance sans quitter la classe des yeux.',
+  'localStorage',
+  'data-action="resume"',
+  'data-action="view-reframes"',
+  'data-action="view-discreet"'
+]) {
+  if (!piloteCoursApp.includes(required)) {
+    throw new Error(`PiloteCours ne contient pas le contrat fonctionnel attendu : ${required}`);
+  }
+}
+
+if (/\bfetch\s*\(|XMLHttpRequest|new\s+WebSocket/i.test(piloteCoursApp)) {
+  throw new Error('PiloteCours ne doit effectuer aucun appel réseau dans cette version');
 }
 
 for (const htmlPath of htmlFiles) {
@@ -49,7 +85,15 @@ for (const htmlPath of htmlFiles) {
     throw new Error(`${label} contient une adresse e-mail non canonique : ${unexpectedEmails.join(', ')}`);
   }
 
-  for (const required of ['<title>', 'name="description"', 'rel="canonical"', '<main']) {
+  for (const required of [
+    '<title>',
+    'name="description"',
+    'rel="canonical"',
+    'property="og:title"',
+    'property="og:description"',
+    'rel="icon"',
+    '<main'
+  ]) {
     if (!html.includes(required)) {
       throw new Error(`${label} ne contient pas ${required}`);
     }
@@ -57,6 +101,10 @@ for (const htmlPath of htmlFiles) {
 
   if (/C:\\Users|file:\/\//i.test(html)) {
     throw new Error(`${label} expose un chemin local`);
+  }
+
+  if (/\+32[\s.-]*(?:\(0\)[\s.-]*)?4\d{2}/i.test(html)) {
+    throw new Error(`${label} expose un numéro de téléphone`);
   }
 
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
