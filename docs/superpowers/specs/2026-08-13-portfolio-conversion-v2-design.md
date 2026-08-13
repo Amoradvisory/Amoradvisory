@@ -46,6 +46,8 @@ Le nom d’Amor reste dominant. `enseignant.be` n’est pas présenté comme une
 8. **CTA final** — email et LinkedIn.
 9. **Laboratoire** — lien GitHub discret pour les expérimentations secondaires ; aucun catalogue technique sur la homepage.
 
+Les deux points de contact email visibles sont volontaires : le CTA `Échanger` du hero et le lien `Email` du CTA final. Ils utilisent tous deux la même adresse canonique ; aucun autre `mailto:` n’est ajouté.
+
 ## PiloteCours web
 
 ### URL
