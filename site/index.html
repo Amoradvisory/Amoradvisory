@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Amor El Hamrouni — IA appliquée à l’éducation</title>
+    <title>Amor El Hamrouni — IA appliquée à l’éducation, formation & conception pédagogique</title>
     <meta
       name="description"
-      content="Portfolio d’Amor El Hamrouni : TeacherFlow, PiloteCours et systèmes IA pédagogiques conçus avec contrôle humain, traçabilité et limites explicites."
+      content="Portfolio d’Amor El Hamrouni, enseignant et formateur : des frictions pédagogiques transformées en dispositifs simples, testables et responsables."
     />
-    <meta name="theme-color" content="#12213b" />
+    <meta name="theme-color" content="#10233f" />
+    <meta name="color-scheme" content="light" />
     <meta property="og:title" content="Amor El Hamrouni — IA appliquée à l’éducation" />
     <meta
       property="og:description"
-      content="Des problèmes de terrain transformés en dispositifs concrets, contrôlés et explicables."
+      content="Trois preuves concrètes : TeacherFlow, PiloteCours et Second cerveau enseignant."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_BE" />
     <meta property="og:url" content="https://amoradvisory.github.io/Amoradvisory/" />
+    <meta name="twitter:card" content="summary" />
     <link rel="canonical" href="https://amoradvisory.github.io/Amoradvisory/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,14 +28,17 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Accueil — Amor El Hamrouni">
+        <a class="brand" href="./" aria-label="Accueil — Amor El Hamrouni">
           <span class="brand-mark" aria-hidden="true">AEH</span>
-          <span>Amor El Hamrouni</span>
+          <span>
+            <strong>Amor El Hamrouni</strong>
+            <small>Enseignant · formateur</small>
+          </span>
         </a>
         <nav class="nav" aria-label="Navigation principale">
-          <a href="#preuves">Démonstrateurs</a>
-          <a href="#methode">Méthode</a>
-          <a href="#parcours">Parcours</a>
+          <a href="#frictions">Frictions</a>
+          <a href="#demonstrateurs">Démonstrateurs</a>
+          <a href="#contributions">Contributions</a>
           <a class="nav-cta" href="#contact">Contact</a>
         </nav>
       </div>
@@ -39,97 +46,155 @@
 
     <main id="contenu">
       <section class="container hero" aria-labelledby="titre-principal">
-        <div>
-          <p class="eyebrow">Enseignement · formation · IA appliquée</p>
-          <h1 id="titre-principal">Transformer les frictions éducatives en dispositifs concrets.</h1>
+        <div class="hero-copy">
+          <p class="identity">Amor El Hamrouni</p>
+          <p class="role">Enseignant & formateur — IA appliquée à l’éducation</p>
+          <h1 id="titre-principal">Je transforme des frictions pédagogiques concrètes en dispositifs simples, testables et responsables.</h1>
           <p class="lede">
-            Enseignant-formateur, je conçois et orchestre des prototypes qui rendent l’IA utile,
-            contrôlable et explicable — du retour de cours à la mémoire pédagogique.
+            L’expérience de classe donne le problème. La conception pédagogique cadre la réponse.
+            Prototypes, agents et automatisations n’interviennent que lorsqu’ils rendent l’usage plus clair ou plus utile.
           </p>
           <div class="actions">
-            <a class="button primary" href="#preuves">Voir les preuves</a>
-            <a class="button" href="https://www.linkedin.com/in/amor-el-hamrouni/">Profil LinkedIn</a>
+            <a class="button primary" href="#demonstrateurs">Voir les démonstrateurs</a>
+            <a class="button" href="mailto:enseignant.be@gmail.com">Échanger</a>
           </div>
         </div>
 
-        <aside class="hero-proof" aria-label="État du portfolio">
-          <span class="proof-status">Preuves publiques</span>
-          <p class="number">3</p>
-          <p class="caption">cas lisibles sans promesse gonflée à l’hélium.</p>
-          <ul class="mini-list">
-            <li><span>TeacherFlow</span><strong>démo live</strong></li>
-            <li><span>PiloteCours</span><strong>code + cas</strong></li>
-            <li><span>Second cerveau</span><strong>architecture</strong></li>
-          </ul>
+        <aside class="hero-evidence" aria-labelledby="hero-evidence-title">
+          <p class="eyebrow">Preuves inspectables</p>
+          <h2 id="hero-evidence-title">Trois réponses, trois frictions.</h2>
+          <ol>
+            <li>
+              <a href="https://amoradvisory.github.io/FlowPilot/teacher/">
+                <span>Observation perdue</span>
+                <strong>TeacherFlow</strong>
+              </a>
+            </li>
+            <li>
+              <a href="demos/pilotecours/">
+                <span>Repère introuvable en classe</span>
+                <strong>PiloteCours</strong>
+              </a>
+            </li>
+            <li>
+              <a href="cases/second-cerveau.html">
+                <span>Mémoire pédagogique dispersée</span>
+                <strong>Second cerveau</strong>
+              </a>
+            </li>
+          </ol>
+          <p class="evidence-note">Chaque preuve expose aussi son niveau de maturité et ses limites.</p>
         </aside>
       </section>
 
-      <section class="section" id="preuves" aria-labelledby="titre-preuves">
+      <section class="section section-soft" id="frictions" aria-labelledby="titre-frictions">
+        <div class="container">
+          <div class="section-heading compact-heading">
+            <div>
+              <p class="eyebrow">Le problème avant l’outil</p>
+              <h2 id="titre-frictions">Trois moments où le travail utile s’évapore.</h2>
+            </div>
+            <p>Le point de départ n’est pas « où mettre de l’IA ? », mais « qu’est-ce qui empêche d’agir correctement maintenant ? »</p>
+          </div>
+
+          <div class="friction-grid">
+            <article class="friction-card">
+              <span class="card-index">01</span>
+              <h3>Les observations terrain disparaissent</h3>
+              <p>Une idée d’amélioration existe après le cours, puis se perd avant la séance suivante.</p>
+              <a href="#teacherflow">Réponse : TeacherFlow →</a>
+            </article>
+            <article class="friction-card">
+              <span class="card-index">02</span>
+              <h3>Le besoin arrive avant qu’on ait le temps de chercher</h3>
+              <p>En classe, retrouver une consigne ou une formulation au mauvais moment ajoute de la charge mentale.</p>
+              <a href="#pilotecours">Réponse : PiloteCours →</a>
+            </article>
+            <article class="friction-card">
+              <span class="card-index">03</span>
+              <h3>Trop d’informations, peu de mémoire exploitable</h3>
+              <p>Sources, interprétations et idées se mélangent ; leur origine devient difficile à vérifier.</p>
+              <a href="#second-cerveau">Réponse : Second cerveau →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="demonstrateurs" aria-labelledby="titre-demonstrateurs">
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">Démonstrateurs</p>
-              <h2 id="titre-preuves">Des preuves, pas un nuage de mots-clés.</h2>
+              <p class="eyebrow">Trois preuves principales</p>
+              <h2 id="titre-demonstrateurs">La valeur d’abord. La technique au second plan.</h2>
             </div>
-            <p>
-              Chaque projet part d’un problème professionnel identifiable et expose le dispositif,
-              le rôle de l’automatisation, le contrôle humain, le niveau de maturité et les limites.
-            </p>
+            <p>Chaque projet relie un problème observable, une réponse testable, une capacité transférable et une limite explicite.</p>
           </div>
 
-          <div class="proof-grid">
-            <article class="proof-card featured">
-              <p class="card-kicker">01 · Démonstration interactive</p>
-              <h3>TeacherFlow</h3>
-              <p>
-                Un cockpit local-first qui transforme une observation post-cours très courte en
-                prochaine amélioration explicite, sans donnée d’élève.
-              </p>
-              <div class="loop" aria-label="Boucle TeacherFlow">
-                <span>Préparer</span>
-                <span>Enseigner</span>
-                <span>Observer</span>
-                <span>Capitaliser</span>
-                <span>Améliorer</span>
+          <div class="proof-stack">
+            <article class="proof-card" id="teacherflow">
+              <div class="proof-number" aria-hidden="true">01</div>
+              <div class="proof-intro">
+                <p class="proof-type">Démonstration interactive</p>
+                <h3>TeacherFlow</h3>
+                <p class="proof-tagline">De l’observation fugace à la mémoire pédagogique.</p>
+                <div class="process" aria-label="Parcours TeacherFlow">
+                  <span>Préparer</span><span>Enseigner</span><span>Observer</span><span>Capitaliser</span><span>Améliorer</span>
+                </div>
               </div>
-              <div class="card-bottom">
-                <span class="status">Public · fonctionnel</span>
-                <div class="card-links">
-                  <a href="https://amoradvisory.github.io/FlowPilot/teacher/">Tester la démo</a>
-                  <a href="cases/teacherflow.html">Lire le cas</a>
+              <div class="proof-details">
+                <dl>
+                  <div><dt>Problème</dt><dd>Une observation post-cours utile ne rejoint pas toujours la préparation suivante.</dd></div>
+                  <div><dt>Réponse</dt><dd>Une boucle locale et courte qui transforme le constat en prochaine amélioration explicite.</dd></div>
+                  <div><dt>Ce que cela démontre</dt><dd>Concevoir un flux pédagogique sobre, traçable et directement testable.</dd></div>
+                </dl>
+                <div class="proof-actions">
+                  <a class="button primary" href="https://amoradvisory.github.io/FlowPilot/teacher/">Tester TeacherFlow</a>
+                  <a class="text-link" href="cases/teacherflow.html">Lire l’étude de cas →</a>
                 </div>
               </div>
             </article>
 
-            <article class="proof-card">
-              <p class="card-kicker">02 · Application Android</p>
-              <h3>PiloteCours</h3>
-              <p>
-                Un repère hors ligne, consultable à une main, pour suivre les phases d’une séance et
-                retrouver rapidement des formulations utiles.
-              </p>
-              <div class="card-bottom">
-                <span class="status">Source publique</span>
-                <div class="card-links">
-                  <a href="cases/pilotecours.html">Lire le cas</a>
-                  <a href="https://github.com/Amoradvisory/claude-agent-workspace/tree/master/PiloteCours"
-                    >Voir le code</a
-                  >
+            <article class="proof-card" id="pilotecours">
+              <div class="proof-number" aria-hidden="true">02</div>
+              <div class="proof-intro">
+                <p class="proof-type">Démonstration web · prototype Android</p>
+                <h3>PiloteCours</h3>
+                <p class="proof-tagline">Garder le fil de la séance sans quitter la classe des yeux.</p>
+                <div class="device-cue" aria-hidden="true">
+                  <span>Avant</span><span>0–15</span><span>15–45</span><span>45–120</span><span>Fin</span>
+                </div>
+              </div>
+              <div class="proof-details">
+                <dl>
+                  <div><dt>Problème</dt><dd>En situation, une information utile doit être retrouvée en quelques secondes.</dd></div>
+                  <div><dt>Réponse</dt><dd>Un parcours mobile en cinq phases, avec recadrages rapides, reprise locale et mode discret.</dd></div>
+                  <div><dt>Ce que cela démontre</dt><dd>Transformer une friction pédagogique en produit testable et piloter sa réalisation.</dd></div>
+                </dl>
+                <div class="proof-actions">
+                  <a class="button primary" href="demos/pilotecours/">Ouvrir PiloteCours</a>
+                  <a class="text-link" href="cases/pilotecours.html">Lire l’étude de cas →</a>
                 </div>
               </div>
             </article>
 
-            <article class="proof-card">
-              <p class="card-kicker">03 · Système de connaissance</p>
-              <h3>Second cerveau enseignant</h3>
-              <p>
-                Une architecture qui distingue source, inférence et proposition pour relier
-                référentiels, capital pédagogique et retours de terrain sans brouiller leur statut.
-              </p>
-              <div class="card-bottom">
-                <span class="status">Cas public anonymisé</span>
-                <div class="card-links">
-                  <a href="cases/second-cerveau.html">Explorer l’architecture</a>
+            <article class="proof-card" id="second-cerveau">
+              <div class="proof-number" aria-hidden="true">03</div>
+              <div class="proof-intro">
+                <p class="proof-type">Système de connaissance</p>
+                <h3>Second cerveau enseignant</h3>
+                <p class="proof-tagline">Transformer l’expérience pédagogique en mémoire cumulative.</p>
+                <div class="status-chain" aria-label="Statuts de connaissance">
+                  <span>Source</span><span>Inférence</span><span>Proposition</span>
+                </div>
+              </div>
+              <div class="proof-details">
+                <dl>
+                  <div><dt>Problème</dt><dd>Une mémoire documentaire devient fragile lorsque faits, interprétations et idées se confondent.</dd></div>
+                  <div><dt>Réponse</dt><dd>Une architecture qui conserve l’origine et sépare clairement trois statuts de connaissance.</dd></div>
+                  <div><dt>Ce que cela démontre</dt><dd>Structurer l’IA autour de la traçabilité, du jugement humain et de limites vérifiables.</dd></div>
+                </dl>
+                <div class="proof-actions">
+                  <a class="button primary" href="cases/second-cerveau.html">Explorer le système</a>
                 </div>
               </div>
             </article>
@@ -137,113 +202,97 @@
         </div>
       </section>
 
-      <section class="section" id="methode" aria-labelledby="titre-methode">
+      <section class="method-band" id="methode" aria-labelledby="titre-methode">
+        <div class="container">
+          <p class="eyebrow">Méthode</p>
+          <h2 id="titre-methode">Du terrain à une preuve discutable.</h2>
+          <ol class="method-flow">
+            <li><span>01</span>Observer</li>
+            <li><span>02</span>Cadrer</li>
+            <li><span>03</span>Concevoir</li>
+            <li><span>04</span>Orchestrer</li>
+            <li><span>05</span>Tester</li>
+            <li><span>06</span>Améliorer</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="contributions" aria-labelledby="titre-contributions">
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow">Méthode</p>
-              <h2 id="titre-methode">Le terrain d’abord. L’outil ensuite.</h2>
+              <p class="eyebrow">Contributions possibles</p>
+              <h2 id="titre-contributions">Ce que je peux apporter à un projet.</h2>
             </div>
-            <p>
-              Je ne commence pas par « ajouter de l’IA ». Je cherche le point de friction, réduis le
-              parcours, définis ce qui doit rester humain, puis rends la preuve vérifiable.
-            </p>
+            <p>Des capacités proposées, à adapter au contexte et aux responsabilités de l’organisation — pas un palmarès de missions imaginaires.</p>
           </div>
-
-          <div class="method-grid">
-            <article class="method-step">
-              <span class="step-number">01</span>
-              <h3>Observer</h3>
-              <p>Nommer le problème réel, l’utilisateur et le moment où la friction apparaît.</p>
-            </article>
-            <article class="method-step">
-              <span class="step-number">02</span>
-              <h3>Cadrer</h3>
-              <p>Formuler une hypothèse, des garde-fous et un niveau de preuve honnête.</p>
-            </article>
-            <article class="method-step">
-              <span class="step-number">03</span>
-              <h3>Orchestrer</h3>
-              <p>Combiner no-code, agents ou code lorsque cela réduit réellement la friction.</p>
-            </article>
-            <article class="method-step">
-              <span class="step-number">04</span>
-              <h3>Vérifier</h3>
-              <p>Tester le parcours, documenter les limites et préparer l’expérimentation suivante.</p>
-            </article>
+          <div class="contribution-grid">
+            <article><span>01</span><h3>Formation & acculturation IA</h3><p>Transformer des outils complexes en usages compréhensibles, prudents et applicables.</p></article>
+            <article><span>02</span><h3>Conception pédagogique</h3><p>Passer d’un besoin de terrain à un parcours, une ressource ou un dispositif exploitable.</p></article>
+            <article><span>03</span><h3>Prototypage & expérimentation</h3><p>Rendre une hypothèse testable avant d’engager un projet plus lourd.</p></article>
+            <article><span>04</span><h3>Accompagnement de projet</h3><p>Faire le lien entre pédagogie, utilisateurs, contraintes et possibilités techniques.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="parcours" aria-labelledby="titre-parcours">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Positionnement</p>
-              <h2 id="titre-parcours">Pédagogie, formation et systèmes IA contrôlés.</h2>
-            </div>
-            <p>
-              Enseignant-formateur titulaire du Certificat d’Aptitudes Pédagogiques (CAP), je relie
-              l’expérience de classe, la conception pédagogique et l’orchestration d’outils.
-            </p>
+      <section class="section section-guardrails" id="garde-fous" aria-labelledby="titre-garde-fous">
+        <div class="container guardrail-layout">
+          <div>
+            <p class="eyebrow">Garde-fous</p>
+            <h2 id="titre-garde-fous">La sobriété fait partie de la conception.</h2>
+            <p>Choisir de ne pas utiliser l’IA lorsqu’elle n’apporte rien n’est pas un renoncement. C’est une décision de conception.</p>
           </div>
+          <ul class="guardrail-list">
+            <li><strong>IA utile</strong><span>Un levier identifié, jamais une décoration.</span></li>
+            <li><strong>Humain dans la boucle</strong><span>Le jugement professionnel garde le dernier mot.</span></li>
+            <li><strong>Données minimales</strong><span>Ne pas collecter ce qui n’est pas nécessaire.</span></li>
+            <li><strong>Limites explicites</strong><span>Le niveau de maturité est indiqué sans brouillard.</span></li>
+            <li><strong>Preuves honnêtes</strong><span>Aucune métrique, adoption ou validation inventée.</span></li>
+          </ul>
+        </div>
+      </section>
 
-          <div class="facts-grid">
-            <article class="fact">
-              <h3>Terrain</h3>
-              <p>Des besoins formulés depuis l’enseignement et la formation, pas depuis une démo générique.</p>
-            </article>
-            <article class="fact">
-              <h3>Conception</h3>
-              <p>Parcours courts, vocabulaire métier, faible charge cognitive et contrôle explicite.</p>
-            </article>
-            <article class="fact">
-              <h3>Orchestration</h3>
-              <p>Agents, automatisations, Notion et code mobilisés comme moyens, jamais comme costume.</p>
-            </article>
-            <article class="fact">
-              <h3>Transmission</h3>
-              <p>Des systèmes expliqués pour être discutés avec enseignants, formateurs et décideurs.</p>
-            </article>
+      <section class="section" id="a-propos" aria-labelledby="titre-a-propos">
+        <div class="container about-layout">
+          <div>
+            <p class="eyebrow">À propos</p>
+            <h2 id="titre-a-propos">Une pratique ancrée dans l’éducation.</h2>
           </div>
-
-          <div class="transparency" style="margin-top: 3rem">
-            <div>
-              <p class="eyebrow">Transparence</p>
-              <h3>Ce portfolio ne vend pas un ingénieur logiciel.</h3>
-            </div>
-            <div>
-              <p>
-                Les outils sont réalisés avec l’appui d’agents et d’automatisations. La valeur revendiquée
-                est la capacité à définir un problème pédagogique, cadrer la solution, orchestrer la
-                production, tester le résultat et expliquer les choix.
-              </p>
-              <p>
-                Aucun prototype n’est présenté comme déployé dans un établissement, validé à grande
-                échelle ou porteur d’un impact mesuré lorsque ce n’est pas le cas.
-              </p>
-            </div>
+          <div>
+            <p class="about-lede">Enseignant et formateur en Belgique francophone, j’articule plusieurs terrains éducatifs, la conception pédagogique et l’IA appliquée depuis 2023.</p>
+            <ul class="fact-list">
+              <li>Certificat d’Aptitudes Pédagogiques (CAP)</li>
+              <li>Bachelier en marketing</li>
+              <li>Expérience dans plus de huit institutions</li>
+              <li>Français · English</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section" id="contact" aria-labelledby="titre-contact">
+      <section class="section contact-section" id="contact" aria-labelledby="titre-contact">
         <div class="container contact-panel">
           <div>
-            <p class="eyebrow" style="color: #d9f7fa">Contact</p>
-            <h2 id="titre-contact">Parlons d’un problème éducatif concret.</h2>
+            <p class="eyebrow">Un point de départ concret</p>
+            <h2 id="titre-contact">Vous avez un problème pédagogique ou de formation à explorer&nbsp;?</h2>
           </div>
           <div>
-            <p>
-              Formation, conception pédagogique, démonstrateur IA, capitalisation ou projet pilote :
-              commençons par le terrain et les contraintes réelles.
-            </p>
+            <p>Commençons par la friction, les personnes concernées et les contraintes. Le choix des outils viendra après — ils survivront à cette attente, promis.</p>
             <div class="actions">
-              <a class="button primary" href="mailto:enseignant.be@gmail.com">Me contacter</a>
+              <a class="button primary" href="mailto:enseignant.be@gmail.com">Email</a>
               <a class="button" href="https://www.linkedin.com/in/amor-el-hamrouni/">LinkedIn</a>
-              <a class="button" href="https://github.com/Amoradvisory">GitHub</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="laboratory" aria-labelledby="titre-laboratoire">
+        <div class="container laboratory-inner">
+          <div>
+            <p class="eyebrow">Laboratoire</p>
+            <h2 id="titre-laboratoire">Les autres expérimentations restent accessibles, sans détourner le récit principal.</h2>
+          </div>
+          <a href="https://github.com/Amoradvisory">Voir le profil GitHub →</a>
         </div>
       </section>
     </main>
@@ -251,7 +300,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <span>© 2026 Amor El Hamrouni</span>
-        <span>Portfolio factuel · données de démonstration uniquement</span>
+        <span>Belgique francophone · Portfolio factuel</span>
       </div>
     </footer>
   </body>

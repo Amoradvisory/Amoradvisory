@@ -5,6 +5,7 @@ const root = resolve('site');
 const expected = [
   'index.html',
   'styles.css',
+  'favicon.svg',
   'robots.txt',
   'sitemap.xml',
   'cases/teacherflow.html',
@@ -54,6 +55,23 @@ for (const required of [
   }
 }
 
+const piloteCoursApp = readFileSync(join(root, 'demos/pilotecours/app.js'), 'utf8');
+for (const required of [
+  'Garder le fil de la séance sans quitter la classe des yeux.',
+  'localStorage',
+  'data-action="resume"',
+  'data-action="view-reframes"',
+  'data-action="view-discreet"'
+]) {
+  if (!piloteCoursApp.includes(required)) {
+    throw new Error(`PiloteCours ne contient pas le contrat fonctionnel attendu : ${required}`);
+  }
+}
+
+if (/\bfetch\s*\(|XMLHttpRequest|new\s+WebSocket/i.test(piloteCoursApp)) {
+  throw new Error('PiloteCours ne doit effectuer aucun appel réseau dans cette version');
+}
+
 for (const htmlPath of htmlFiles) {
   const html = readFileSync(htmlPath, 'utf8');
   const label = relative(root, htmlPath);
@@ -73,6 +91,7 @@ for (const htmlPath of htmlFiles) {
     'rel="canonical"',
     'property="og:title"',
     'property="og:description"',
+    'rel="icon"',
     '<main'
   ]) {
     if (!html.includes(required)) {

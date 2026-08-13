@@ -3,54 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TeacherFlow — étude de cas | Amor El Hamrouni</title>
+    <title>TeacherFlow — de l’observation à la mémoire pédagogique | Amor El Hamrouni</title>
     <meta
       name="description"
-      content="Étude de cas TeacherFlow : un cockpit enseignant local-first pour transformer les observations post-cours en améliorations explicites."
+      content="Étude de cas TeacherFlow : transformer une observation post-cours en prochaine amélioration explicite, sans donnée élève."
     />
-    <meta name="theme-color" content="#12213b" />
+    <meta name="theme-color" content="#10233f" />
+    <meta property="og:title" content="TeacherFlow — étude de cas" />
+    <meta property="og:description" content="De l’observation fugace à la mémoire pédagogique." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="fr_BE" />
+    <meta property="og:url" content="https://amoradvisory.github.io/Amoradvisory/cases/teacherflow.html" />
     <link rel="canonical" href="https://amoradvisory.github.io/Amoradvisory/cases/teacherflow.html" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body>
+  <body class="case-page">
     <a class="skip-link" href="#contenu">Aller au contenu</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="../index.html">
+        <a class="brand" href="../">
           <span class="brand-mark" aria-hidden="true">AEH</span>
-          <span>Amor El Hamrouni</span>
+          <span><strong>Amor El Hamrouni</strong><small>Enseignant · formateur</small></span>
         </a>
         <nav class="nav" aria-label="Navigation principale">
-          <a href="../index.html#preuves">Démonstrateurs</a>
-          <a href="../index.html#methode">Méthode</a>
-          <a class="nav-cta" href="../index.html#contact">Contact</a>
+          <a href="../#frictions">Frictions</a>
+          <a href="../#demonstrateurs">Démonstrateurs</a>
+          <a class="nav-cta" href="../#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main id="contenu" class="container">
-      <section class="case-hero">
+      <section class="case-hero" aria-labelledby="titre-cas">
         <div>
-          <p class="eyebrow">Étude de cas · cockpit pédagogique</p>
-          <h1>TeacherFlow</h1>
-          <p class="lede">
-            Transformer un retour de cours de trente secondes en prochaine amélioration explicite,
-            sans donnée d’élève et sans confier le jugement pédagogique à une machine.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="https://amoradvisory.github.io/FlowPilot/teacher/"
-              >Tester la démo</a
-            >
-            <a class="button" href="https://github.com/Amoradvisory/FlowPilot/pull/1">Voir la PR</a>
+          <p class="eyebrow">Étude de cas · démonstration interactive</p>
+          <h1 id="titre-cas">TeacherFlow</h1>
+          <p class="lede">De l’observation fugace à la mémoire pédagogique.</p>
+          <div class="case-actions">
+            <a class="button primary" href="https://amoradvisory.github.io/FlowPilot/teacher/">Tester TeacherFlow</a>
+            <a class="back-link" href="../#demonstrateurs">← Retour aux preuves</a>
           </div>
         </div>
-        <aside class="case-summary" aria-label="Résumé du projet">
+        <aside class="case-summary" aria-label="Résumé du démonstrateur">
           <dl>
-            <dt>Utilisateur</dt><dd>Enseignant</dd>
-            <dt>Format</dt><dd>Prototype web public</dd>
-            <dt>Données</dt><dd>Fictives, navigateur local</dd>
-            <dt>Maturité</dt><dd>Démonstrateur fonctionnel</dd>
-            <dt>Validation</dt><dd>Tests, build, desktop et mobile</dd>
+            <div><dt>Friction</dt><dd>Observation post-cours perdue</dd></div>
+            <div><dt>Réponse</dt><dd>Boucle en cinq temps</dd></div>
+            <div><dt>Données</dt><dd>Aucune donnée élève</dd></div>
+            <div><dt>Stockage</dt><dd>Local au navigateur</dd></div>
+            <div><dt>Maturité</dt><dd>Démonstrateur public fonctionnel</dd></div>
           </dl>
         </aside>
       </section>
@@ -59,133 +60,91 @@
         <aside class="case-toc" aria-label="Sommaire">
           <p>Dans ce cas</p>
           <ol>
-            <li><a href="#probleme">Problème</a></li>
+            <li><a href="#friction">Friction</a></li>
             <li><a href="#hypothese">Hypothèse</a></li>
-            <li><a href="#prototype">Prototype</a></li>
-            <li><a href="#controle">Contrôle humain</a></li>
+            <li><a href="#reponse">Réponse</a></li>
+            <li><a href="#tester">Tester</a></li>
+            <li><a href="#choix">Choix de conception</a></li>
+            <li><a href="#preuve">Ce que cela démontre</a></li>
             <li><a href="#limites">Limites</a></li>
-            <li><a href="#preuve">Ce que cela prouve</a></li>
-            <li><a href="#suite">Prochaine expérience</a></li>
           </ol>
         </aside>
 
         <article class="case-content">
-          <section id="probleme">
-            <p class="eyebrow">01 · Problème professionnel</p>
-            <h2>Les signaux utiles s’évaporent entre deux cours.</h2>
-            <p class="large">
-              Une consigne ambiguë, un exemple qui fonctionne ou un point de blocage sont souvent
-              perçus juste après la séance. Sans capture très courte, ces informations restent dans la
-              mémoire immédiate puis disparaissent avant la préparation suivante.
-            </p>
-            <blockquote>
-              Le problème n’est pas de produire davantage de notes. Il est de conserver la bonne
-              observation avec assez peu d’effort pour qu’elle soit réellement saisie.
-            </blockquote>
+          <section id="friction">
+            <p class="eyebrow">01 · Friction</p>
+            <h2>Le cours produit une information utile que le système de travail oublie.</h2>
+            <p class="large">Après une séance, une observation est encore fraîche. Sans passage simple vers la préparation suivante, elle rejoint les notes éparses — cette grande réserve naturelle où les bonnes intentions viennent hiberner.</p>
+            <blockquote>La friction n’est pas de manquer d’idées. C’est de relier l’observation au prochain geste pédagogique.</blockquote>
           </section>
 
           <section id="hypothese">
             <p class="eyebrow">02 · Hypothèse</p>
-            <h2>Une boucle visible vaut mieux qu’un tableau de bord tentaculaire.</h2>
-            <p>
-              Si l’enseignant peut qualifier un signal, écrire une phrase et obtenir une piste
-              modifiable en moins d’une minute, le retour de terrain peut rejoindre la préparation
-              suivante sans créer une nouvelle charge administrative.
-            </p>
-            <div class="case-flow" aria-label="Boucle TeacherFlow">
-              <span>Préparer</span><span>Enseigner</span><span>Observer</span><span>Capitaliser</span
-              ><span>Améliorer</span>
-            </div>
+            <h2>Une boucle courte peut préserver la continuité.</h2>
+            <p>Si l’observation est saisie avec peu d’effort, qualifiée puis ramenée au bon moment, elle peut devenir une amélioration explicite plutôt qu’un souvenir imprécis.</p>
           </section>
 
-          <section id="prototype">
-            <p class="eyebrow">03 · Dispositif</p>
-            <h2>Un cockpit « Aujourd’hui » et une capture ultra-courte.</h2>
+          <section id="reponse">
+            <p class="eyebrow">03 · Réponse</p>
+            <h2>Cinq temps, un seul fil.</h2>
             <div class="decision-grid">
-              <div class="decision">
-                <strong>Données fictives</strong>
-                Deux séances de démonstration rendent le parcours compréhensible sans exposer une classe réelle.
-              </div>
-              <div class="decision">
-                <strong>Trois signaux</strong>
-                « A fonctionné », « A bloqué » ou « À essayer » réduisent le temps de qualification.
-              </div>
-              <div class="decision">
-                <strong>Historique borné</strong>
-                Six observations au maximum restent dans le navigateur afin d’éviter une fausse promesse de plateforme.
-              </div>
-              <div class="decision">
-                <strong>Action suivante</strong>
-                La note devient une suggestion explicite que l’enseignant peut conserver, corriger ou ignorer.
-              </div>
+              <div class="decision"><strong>Préparer</strong>Formuler l’intention et le point d’attention.</div>
+              <div class="decision"><strong>Enseigner</strong>Garder le dispositif hors du chemin pendant la séance.</div>
+              <div class="decision"><strong>Observer</strong>Conserver un constat bref après le cours.</div>
+              <div class="decision"><strong>Capitaliser</strong>Transformer le constat en élément retrouvable.</div>
+              <div class="decision"><strong>Améliorer</strong>Faire remonter une prochaine action explicite.</div>
             </div>
-            <p class="safe-note">
-              La démo ne demande aucun nom, identifiant, résultat ou donnée personnelle d’élève.
-            </p>
+            <p class="safe-note">Le démonstrateur fonctionne sans compte, sans donnée élève et sans appel actif à une IA externe.</p>
           </section>
 
-          <section id="controle">
-            <p class="eyebrow">04 · IA et contrôle humain</p>
-            <h2>L’automatisation propose ; l’enseignant dispose.</h2>
-            <p>
-              Dans cette version, la suggestion est déterministe et exécutée localement. Elle simule
-              le rôle qu’une IA pourrait jouer plus tard : synthétiser, relier ou reformuler. Aucune
-              API externe ni clé n’est utilisée.
-            </p>
+          <section id="tester">
+            <p class="eyebrow">04 · Tester</p>
+            <h2>La preuve peut être parcourue immédiatement.</h2>
+            <p>La démonstration publique permet d’examiner le parcours, les libellés, la continuité entre les étapes et la persistance locale. Elle ne demande ni inscription ni donnée réelle.</p>
+            <a class="button primary" href="https://amoradvisory.github.io/FlowPilot/teacher/">Ouvrir la démo TeacherFlow</a>
+          </section>
+
+          <section id="choix">
+            <p class="eyebrow">05 · Choix de conception</p>
+            <h2>Réduire le nombre de décisions avant d’ajouter des fonctions.</h2>
+            <div class="choice-grid">
+              <div class="choice"><strong>Local-first</strong>Le contenu de démonstration reste dans le navigateur.</div>
+              <div class="choice"><strong>Une boucle visible</strong>Le parcours explique le raisonnement sans exposé technique.</div>
+              <div class="choice"><strong>Données minimales</strong>Aucun nom, note ou identifiant d’élève n’est nécessaire.</div>
+              <div class="choice"><strong>IA non décorative</strong>Aucun assistant artificiel n’est ajouté lorsqu’il n’améliore pas le geste.</div>
+            </div>
+          </section>
+
+          <section id="preuve">
+            <p class="eyebrow">06 · Ce que cela démontre</p>
+            <h2>Concevoir la continuité entre terrain, mémoire et action.</h2>
             <ul>
-              <li>l’enseignant choisit le signal et formule l’observation ;</li>
-              <li>il voit immédiatement la piste dérivée ;</li>
-              <li>il garde la responsabilité du contexte, de l’interprétation et de la décision ;</li>
-              <li>aucune adaptation n’est appliquée automatiquement à un cours.</li>
+              <li>partir d’une friction professionnelle précise ;</li>
+              <li>transformer un cycle implicite en parcours testable ;</li>
+              <li>réduire la collecte et conserver le contrôle humain ;</li>
+              <li>rendre la logique compréhensible à un enseignant comme à un décideur.</li>
             </ul>
           </section>
 
           <section id="limites">
-            <p class="eyebrow">05 · Maturité et limites</p>
-            <h2>Un prototype public, pas un déploiement scolaire.</h2>
-            <p class="limit-note">
-              Pas de synchronisation, de compte, de backend, de test utilisateur documenté ou de
-              mesure d’impact. Les données disparaissent si le stockage du navigateur est effacé.
-            </p>
-            <p>
-              Le code a été testé sur les comportements critiques, vérifié par Svelte/TypeScript,
-              construit avec un chemin GitHub Pages et revu visuellement sur desktop et mobile. L’URL
-              publique et ses assets répondent en HTTP 200.
-            </p>
+            <p class="eyebrow">07 · Limites</p>
+            <h2>Une démonstration publique n’est pas un déploiement.</h2>
+            <p class="limit-note">Aucun déploiement institutionnel, aucune adoption externe, aucune validation utilisateurs formelle et aucune mesure d’impact ne sont revendiqués.</p>
+            <p>La prochaine preuve pertinente serait un test encadré avec des enseignants volontaires, assorti de critères simples : compréhension du parcours, effort de saisie et utilité de la reprise.</p>
           </section>
 
-          <section id="preuve">
-            <p class="eyebrow">06 · Valeur professionnelle</p>
-            <h2>Ce projet prouve une capacité de traduction.</h2>
-            <ul>
-              <li>partir d’une friction de terrain et la réduire à un parcours court ;</li>
-              <li>concevoir une interface avec vocabulaire métier et faible charge cognitive ;</li>
-              <li>définir précisément la place de l’automatisation et du contrôle humain ;</li>
-              <li>tester, documenter et publier une preuve reproductible ;</li>
-              <li>expliciter confidentialité, limites et niveau de maturité.</li>
-            </ul>
-          </section>
-
-          <section id="suite">
-            <p class="eyebrow">07 · Prochaine expérimentation</p>
-            <h2>Tester le rituel, pas seulement l’écran.</h2>
-            <p>
-              Faire utiliser la capture à trois enseignants après plusieurs séances, observer le temps
-              réel, les formulations abandonnées et les actions effectivement réemployées. La suite
-              utile n’est pas d’ajouter douze menus : c’est de vérifier si la boucle survit au couloir
-              entre deux cours.
-            </p>
-            <a class="back-link" href="../index.html#preuves">← Retour aux démonstrateurs</a>
+          <section class="case-end" aria-labelledby="suite-title">
+            <p class="eyebrow">Voir la preuve</p>
+            <h2 id="suite-title">Parcourir la boucle en quelques minutes.</h2>
+            <p>La démonstration utilise uniquement des données fictives et reste réinitialisable.</p>
+            <a class="button" href="https://amoradvisory.github.io/FlowPilot/teacher/">Tester TeacherFlow</a>
           </section>
         </article>
       </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© 2026 Amor El Hamrouni</span>
-        <span>Cas public · données fictives</span>
-      </div>
+      <div class="container footer-inner"><span>© 2026 Amor El Hamrouni</span><span>Démonstrateur public · données fictives</span></div>
     </footer>
   </body>
 </html>

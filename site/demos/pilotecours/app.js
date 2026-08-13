@@ -71,7 +71,7 @@ function renderHome() {
       <div class="hero-panel">
         <p class="eyebrow">Démonstrateur · sans compte</p>
         <h1 id="home-title">Le bon repère,<br /><span>au bon moment.</span></h1>
-        <p class="hero-copy">Une aide de terrain pour garder le fil de la séance sans ajouter une usine à gaz dans la poche.</p>
+        <p class="hero-copy"><strong>Garder le fil de la séance sans quitter la classe des yeux.</strong> Une aide de terrain, sans ajouter une usine à gaz dans la poche.</p>
         <div class="primary-actions">
           <button class="button button-primary" type="button" data-action="start">Commencer</button>
           ${

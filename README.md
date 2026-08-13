@@ -1,84 +1,57 @@
-# Amor El Hamrouni — IA × pédagogie × agents
+# Amor El Hamrouni — IA appliquée à l’éducation
 
-🌐 **[Portfolio public — démonstrateurs et études de cas](https://amoradvisory.github.io/Amoradvisory/)**
+Enseignant et formateur en Belgique francophone, je transforme des frictions pédagogiques concrètes en dispositifs simples, testables et responsables.
 
-**Enseignant & formateur en Belgique francophone | IA appliquée à l’éducation | agents, automatisations et conception d’outils pédagogiques**
+**Portfolio public :** [amoradvisory.github.io/Amoradvisory](https://amoradvisory.github.io/Amoradvisory/)
 
-Je travaille à l’intersection de trois réalités : **enseignement**, **pédagogie** et **intelligence artificielle appliquée**.
+Le terrain fournit le problème. La conception pédagogique cadre la réponse. L’IA, les agents, les automatisations ou le code n’interviennent que lorsqu’ils améliorent réellement l’usage.
 
-Depuis 2023, j’utilise et j’orchestre des outils d’IA, des agents et des automatisations pour résoudre des problèmes concrets : préparer et structurer l’enseignement, capitaliser l’expérience pédagogique, automatiser des tâches répétitives, transformer des contenus en ressources exploitables et concevoir des applications utiles au terrain.
+## Trois preuves principales
 
-Je ne me positionne pas comme ingénieur logiciel. Mon rôle est plutôt de **concevoir le besoin, structurer le dispositif, piloter les agents et outils techniques, tester le résultat et l’inscrire dans un usage métier réel**.
+### TeacherFlow — de l’observation fugace à la mémoire pédagogique
 
-## 🎯 Cap professionnel
+Une boucle courte relie préparation, enseignement, observation, capitalisation et prochaine amélioration. Le démonstrateur fonctionne sans donnée élève et conserve ses données localement.
 
-Je développe aujourd’hui ce portfolio comme preuve de compétences pour évoluer vers des fonctions liées à :
+- [Tester TeacherFlow](https://amoradvisory.github.io/FlowPilot/teacher/)
+- [Lire l’étude de cas](https://amoradvisory.github.io/Amoradvisory/cases/teacherflow.html)
 
-- l’IA appliquée à l’éducation ;
-- la formation et l’accompagnement des professionnels ;
-- la technopédagogie et le numérique éducatif ;
-- la conception de dispositifs et ressources pédagogiques ;
-- les projets, l’innovation et la transformation des pratiques.
+### PiloteCours — garder le fil de la séance
 
-## 🧪 Démonstrateurs pédagogiques et IA
+Une aide de terrain mobile-first organise cinq phases de séance, des recadrages rapides, une reprise locale et un mode discret. Aucun compte, aucune donnée élève, aucun serveur et aucune API IA.
 
-### 📱 PiloteCours
+- [Ouvrir la démo web](https://amoradvisory.github.io/Amoradvisory/demos/pilotecours/)
+- [Lire l’étude de cas](https://amoradvisory.github.io/Amoradvisory/cases/pilotecours.html)
+- [Voir le prototype Android source](https://github.com/Amoradvisory/claude-agent-workspace/tree/master/PiloteCours)
 
-Application Android de pilotage de séance pour enseignant : phases du cours, préparation avant l’entrée en classe, recadrages rapides, mode discret, favoris et consultation hors ligne.
+### Second cerveau enseignant — une mémoire cumulative et traçable
 
-➡️ [`claude-agent-workspace/PiloteCours`](https://github.com/Amoradvisory/claude-agent-workspace/tree/master/PiloteCours)
+Une architecture distingue explicitement **SOURCE → INFÉRENCE → PROPOSITION** afin que les faits, les raisonnements et les idées à tester ne se confondent pas.
 
-**Ce que ce projet démontre :** traduction d’un problème de terrain en interface utilisable, structuration d’un scénario pédagogique, conception mobile et orchestration d’agents pour produire un outil concret.
+- [Explorer l’étude de cas](https://amoradvisory.github.io/Amoradvisory/cases/second-cerveau.html)
 
-### 🧭 FlowPilot
+## Méthode
 
-PWA local-first de pilotage personnel : agenda, focus, habitudes, collections, clarification et analytics. Le projet sert de base à une adaptation vers un **cockpit enseignant** centré sur la préparation, les priorités, les séquences et le suivi du travail pédagogique.
+**Observer → Cadrer → Concevoir → Orchestrer → Tester → Améliorer**
 
-➡️ [FlowPilot](https://github.com/Amoradvisory/FlowPilot)
+Principes : humain dans la boucle, données minimales, maturité annoncée, limites explicites et aucune métrique inventée.
 
-### 🎥 TranscriptIA
+## Autres expérimentations
 
-Application Windows qui transforme une vidéo YouTube en document Markdown horodaté, structuré et exploitable par une IA.
+Les dépôts TranscriptIA, PromptVault, Nanobot Omega et les autres projets publics restent accessibles dans le [laboratoire GitHub](https://github.com/Amoradvisory). Ils documentent des explorations complémentaires sans remplacer les trois preuves pédagogiques principales.
 
-➡️ [TranscriptIA](https://github.com/Amoradvisory/TranscriptIA)
+## Vérifier le site localement
 
-**Usage éducatif visé :** transformer rapidement une ressource vidéo en matériau consultable, analysable et réutilisable dans un dispositif pédagogique.
+Le portfolio et PiloteCours sont statiques, sans dépendance de production.
 
-### 🗂️ PromptVault
+```powershell
+node --test tests/pilotecours.test.mjs
+node scripts/validate-site.mjs
+python -m http.server 8000 --directory site
+```
 
-Bibliothèque de prompts IA synchronisée, disponible en PWA et Android. Elle sert de base à une future bibliothèque de scénarios et workflows pédagogiques réutilisables.
+## Contact
 
-➡️ [PromptVault](https://github.com/Amoradvisory/promptvault)
-
-### 🤖 Nanobot Omega
-
-Agent local autonome multi-outils : orchestration de modèles, Google Workspace, mémoire, scraping, veille, automatisations et self-heal.
-
-➡️ [Nanobot Omega](https://github.com/Amoradvisory/nanobot-omega)
-
-**Ce que ce projet démontre :** capacité à concevoir et piloter une architecture agentique complexe sans chercher à devenir ingénieur logiciel de métier.
-
-## 🧠 Autre preuve structurante
-
-Je développe également dans Notion un **Second cerveau enseignant** : système de mémoire pédagogique reliant référentiels, cours, exercices, évaluations, ressources, observations de terrain, difficultés récurrentes et versions successives.
-
-L’objectif n’est pas de produire davantage de contenu, mais de **capitaliser l’expérience, réduire le travail répétitif et améliorer les décisions pédagogiques**.
-
-## 🧰 Principes de travail
-
-- **Terrain d’abord** : partir d’un problème réellement vécu ou observé.
-- **IA comme levier** : utiliser agents et automatisations pour augmenter la capacité d’action, pas pour remplacer le jugement professionnel.
-- **Contrôle humain** : vérifier, tester et documenter les résultats.
-- **No-code / orchestration lorsque pertinent** : privilégier la valeur métier plutôt que la sophistication technique pour elle-même.
-- **Preuves visibles** : chaque projet doit démontrer une compétence transférable vers la formation, l’accompagnement ou les projets éducatifs.
-
-## 🔗 Références
-
-- [Contact professionnel](mailto:enseignant.be@gmail.com)
+- [Email professionnel](mailto:enseignant.be@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/amor-el-hamrouni/)
-- [CV enseignant](https://amoradvisory.github.io/cv-enseignant/)
-- [CV formateur](https://amoradvisory.github.io/cv-formateur/)
 
-📍 Belgique francophone · Français / English
-
-> Portfolio en évolution continue. Les applications présentées sont des projets personnels et démonstrateurs ; leur niveau de maturité est indiqué dans leurs dépôts respectifs.
+Les projets présentés sont des démonstrateurs personnels. Aucun déploiement institutionnel, usage externe ou impact mesuré n’est revendiqué sans preuve publique correspondante.
