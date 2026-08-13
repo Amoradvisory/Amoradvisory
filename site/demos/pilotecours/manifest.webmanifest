@@ -1,0 +1,19 @@
+{
+  "name": "PiloteCours — aide de terrain",
+  "short_name": "PiloteCours",
+  "description": "Cinq phases et des recadrages rapides pour garder le fil d’une séance.",
+  "lang": "fr-BE",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#040b12",
+  "theme_color": "#07131f",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

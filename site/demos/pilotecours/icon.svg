@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Icône PiloteCours</title>
+  <desc id="desc">Lettre P claire sur fond bleu nuit avec un repère orange.</desc>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="40" x2="448" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12334a"/>
+      <stop offset="1" stop-color="#07131f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="30" y="30" width="452" height="452" rx="88" fill="none" stroke="#69c8ff" stroke-opacity=".42" stroke-width="12"/>
+  <path d="M158 385V126h108c67 0 112 35 112 96 0 64-45 101-116 101h-39v62h-65Zm65-119h39c32 0 49-14 49-42 0-26-17-39-48-39h-40v81Z" fill="#eef7ff"/>
+  <circle cx="369" cy="366" r="35" fill="#ffad5c"/>
+</svg>
