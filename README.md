@@ -74,6 +74,7 @@ L’objectif n’est pas de produire davantage de contenu, mais de **capitaliser
 
 ## 🔗 Références
 
+- [Contact professionnel](mailto:enseignant.be@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/amor-el-hamrouni/)
 - [CV enseignant](https://amoradvisory.github.io/cv-enseignant/)
 - [CV formateur](https://amoradvisory.github.io/cv-formateur/)
