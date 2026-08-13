@@ -48,7 +48,12 @@ function updateState(nextState, { focusMain = true } = {}) {
   state = normalizeState(nextState);
   saveState();
   render();
-  if (focusMain) requestAnimationFrame(() => main.focus());
+  if (focusMain) {
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      main.focus({ preventScroll: true });
+    });
+  }
 }
 
 function phaseButton(phase, index) {
