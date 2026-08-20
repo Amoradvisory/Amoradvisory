@@ -21,7 +21,6 @@ Une aide de terrain mobile-first organise cinq phases de séance, des recadrages
 
 - [Ouvrir la démo web](https://amoradvisory.github.io/Amoradvisory/demos/pilotecours/)
 - [Lire l’étude de cas](https://amoradvisory.github.io/Amoradvisory/cases/pilotecours.html)
-- [Voir le prototype Android source](https://github.com/Amoradvisory/claude-agent-workspace/tree/master/PiloteCours)
 
 ### Second cerveau enseignant — une mémoire cumulative et traçable
 
